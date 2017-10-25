@@ -6,6 +6,7 @@ def CalcPrice(base_price):
 
     price *= (1.0 - discount_rate)
     price *= (1.0 + consumption_tax)
+    price *= (1.0 - discount_rate)
 
     return price
 
