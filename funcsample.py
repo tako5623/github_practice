@@ -4,6 +4,7 @@ def CalcPrice(base_price):
     consumption_tax = 0.08
     price = base_price
 
+    price *= (1.0 - discount_rate)
     price *= (1.0 + consumption_tax)
 
     return price
